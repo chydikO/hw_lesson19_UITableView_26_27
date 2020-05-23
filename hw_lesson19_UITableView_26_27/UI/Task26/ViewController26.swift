@@ -33,7 +33,7 @@ class ViewController26: TableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.title = "Home Screen"
+        self.navigationItem.title = "Home Screen"
     }
     
     override func registerCells() {
