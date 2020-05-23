@@ -50,7 +50,8 @@ class ViewController26: TableViewController {
         super.tableView(tableView, didSelectRowAt: indexPath)
         
         if let profile = dataSource[indexPath.row] as? ProFile {
-            let controller = ProfileController(profile: profile)
+            let controller = ProfileController()//ProfileController(profile: profile)
+            controller.data = profile
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
