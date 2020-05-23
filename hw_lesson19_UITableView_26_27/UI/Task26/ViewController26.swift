@@ -18,51 +18,40 @@
 
 import UIKit
 
-class ViewController26: UIViewController {
+class ViewController26: TableViewController {
 
-    @IBOutlet private var tableView: UITableView!
-        
-        private let itemsCount = 10
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-
-            tableView.delegate = self
-            tableView.dataSource = self
-        }
-
-
+    //MARK: - setup
+    override func setup() {
+        super.setup()
+        self.title = "Home Screen"
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    extension ViewController26: UITableViewDelegate {
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            print("section = \(indexPath.section) Row = \(indexPath.row)")
-            tableView.deselectRow(at: indexPath, animated: true)
+        dataSource.append(contentsOf: ProFile.testData())
+    }
+    
+    override func registerCells() {
+        self.tableView?.register(ProfileCell.nib, forCellReuseIdentifier: ProfileCell.reuseIdentifier)
+    }
+    
+    // MARK: - UITableViewDataSource
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.reuseIdentifier, for: indexPath)
+        if let cell = cell  as? ProfileCell, let profile = dataSource[indexPath.row] as? ProFile {
+            cell.data = profile
+        }
+        return cell
+    }
+    
+    //MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        super.tableView(tableView, didSelectRowAt: indexPath)
+        
+        if let profile = dataSource[indexPath.row] as? ProFile {
+            let controller = ProfileController(profile: profile)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-
-    // 09:36
-
-    extension ViewController26: UITableViewDataSource {
-        // number Of Rows In Section
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 3
-        }
-        
-        // вернуть ячейку для Section для такого-то Row
-        // из IndexPath мы берем Section и Row
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            // есть ли у tableView свободная ячейка с Identifier
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath)
-            cell.textLabel?.text = "\(indexPath.row + 1)"
-            return cell
-        }
-        
-    /*
-        // если у нас больше одной секции , Default is 1 if not implemented
-        func numberOfSections(in tableView: UITableView) -> Int {
-            
-        }
-    */
-        
-    }
+}

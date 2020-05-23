@@ -10,8 +10,25 @@ import UIKit
 
 class ProfileCell: TableCell {
 
-    @IBOutlet private var label: UILabel!
-    @IBOutlet private var inageView: UIImageView!
-
+    @IBOutlet private var name: UILabel?
+    @IBOutlet private var avatar: UIImageView?
     
-}
+    @IBOutlet var separated: UIView?
+    
+    var data: ProFile? {
+            didSet {
+                name?.text = data?.name
+                if let avatarName = data?.avatarName {
+                    self.avatar? = UIImageView(image: UIImage(named: avatarName))
+                } else {
+                    self.avatar? = UIImageView()
+                }
+            }
+        }
+    }
+
+    extension ProfileCell: SeparatedProtocol {
+        var separatedView: UIView? {
+            return separated
+        }
+    }

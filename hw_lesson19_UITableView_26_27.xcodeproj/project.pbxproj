@@ -28,6 +28,7 @@
 		68B8131D24791B7800504A75 /* PictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B8131B24791B7800504A75 /* PictureCell.xib */; };
 		68B8132024791B9600504A75 /* TextDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8131E24791B9600504A75 /* TextDataCell.swift */; };
 		68B8132124791B9600504A75 /* TextDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B8131F24791B9600504A75 /* TextDataCell.xib */; };
+		68B8132524793A1700504A75 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8132424793A1700504A75 /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		68B8131B24791B7800504A75 /* PictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCell.xib; sourceTree = "<group>"; };
 		68B8131E24791B9600504A75 /* TextDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDataCell.swift; sourceTree = "<group>"; };
 		68B8131F24791B9600504A75 /* TextDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextDataCell.xib; sourceTree = "<group>"; };
+		68B8132424793A1700504A75 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				68B813102479182A00504A75 /* ViewController26.swift */,
+				68B8132424793A1700504A75 /* ProfileController.swift */,
 				68B8130F247917D800504A75 /* Cells */,
 			);
 			path = Task26;
@@ -273,6 +276,7 @@
 				68B813192479184700504A75 /* ViewController27.swift in Sources */,
 				68B812FC247914EF00504A75 /* NavigationController.swift in Sources */,
 				68B813042479161300504A75 /* NSObject.swift in Sources */,
+				68B8132524793A1700504A75 /* ProfileController.swift in Sources */,
 				68B813112479182A00504A75 /* ViewController26.swift in Sources */,
 				68B8130B247917AB00504A75 /* ProFile.swift in Sources */,
 				68B81309247917AB00504A75 /* Picture.swift in Sources */,
