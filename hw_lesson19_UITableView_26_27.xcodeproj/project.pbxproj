@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		680E21E324798BE2001156E3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E21E124798BE2001156E3 /* ProfileController.swift */; };
-		680E21E424798BE2001156E3 /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680E21E224798BE2001156E3 /* ProfileController.xib */; };
+		680E21E724799F35001156E3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E21E524799F35001156E3 /* ProfileController.swift */; };
+		680E21E824799F35001156E3 /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680E21E624799F35001156E3 /* ProfileController.xib */; };
 		68B812DD247911CD00504A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B812DC247911CD00504A75 /* AppDelegate.swift */; };
 		68B812E4247911CD00504A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B812E2247911CD00504A75 /* Main.storyboard */; };
 		68B812E6247911D200504A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B812E5247911D200504A75 /* Assets.xcassets */; };
@@ -33,8 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		680E21E124798BE2001156E3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		680E21E224798BE2001156E3 /* ProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
+		680E21E524799F35001156E3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		680E21E624799F35001156E3 /* ProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
 		68B812D9247911CD00504A75 /* hw_lesson19_UITableView_26_27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw_lesson19_UITableView_26_27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B812DC247911CD00504A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68B812E3247911CD00504A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				68B813102479182A00504A75 /* ViewController26.swift */,
-				680E21E124798BE2001156E3 /* ProfileController.swift */,
-				680E21E224798BE2001156E3 /* ProfileController.xib */,
+				680E21E524799F35001156E3 /* ProfileController.swift */,
+				680E21E624799F35001156E3 /* ProfileController.xib */,
 				68B8130F247917D800504A75 /* Cells */,
 			);
 			path = Task26;
@@ -259,7 +259,7 @@
 				68B812E9247911D200504A75 /* LaunchScreen.storyboard in Resources */,
 				68B813152479183A00504A75 /* ProfileCell.xib in Resources */,
 				68B8132124791B9600504A75 /* TextDataCell.xib in Resources */,
-				680E21E424798BE2001156E3 /* ProfileController.xib in Resources */,
+				680E21E824799F35001156E3 /* ProfileController.xib in Resources */,
 				68B812E6247911D200504A75 /* Assets.xcassets in Resources */,
 				68B812E4247911CD00504A75 /* Main.storyboard in Resources */,
 				68B8131D24791B7800504A75 /* PictureCell.xib in Resources */,
@@ -284,11 +284,11 @@
 				68B8130B247917AB00504A75 /* ProFile.swift in Sources */,
 				68B81309247917AB00504A75 /* Picture.swift in Sources */,
 				68B812FF2479153C00504A75 /* SeparatedProtocol.swift in Sources */,
-				680E21E324798BE2001156E3 /* ProfileController.swift in Sources */,
 				68B813162479183A00504A75 /* ProfileCell.swift in Sources */,
 				68B812FD247914EF00504A75 /* ViewController.swift in Sources */,
 				68B8131C24791B7800504A75 /* PictureCell.swift in Sources */,
 				68B812FB247914EF00504A75 /* TableViewController.swift in Sources */,
+				680E21E724799F35001156E3 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

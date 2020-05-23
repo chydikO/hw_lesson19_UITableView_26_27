@@ -23,13 +23,17 @@ class ViewController26: TableViewController {
     //MARK: - setup
     override func setup() {
         super.setup()
-        self.title = "Home Screen"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         dataSource.append(contentsOf: ProFile.testData())
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.title = "Home Screen"
     }
     
     override func registerCells() {
@@ -50,8 +54,7 @@ class ViewController26: TableViewController {
         super.tableView(tableView, didSelectRowAt: indexPath)
         
         if let profile = dataSource[indexPath.row] as? ProFile {
-            let controller = ProfileController()//ProfileController(profile: profile)
-            controller.data = profile
+            let controller = ProfileController(profile: profile)
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
