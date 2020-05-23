@@ -19,7 +19,8 @@ class ProfileCell: TableCell {
             didSet {
                 name?.text = data?.name
                 if let avatarName = data?.avatarName {
-                    self.avatar? = UIImageView(image: UIImage(named: avatarName))
+                    let image = UIImage(named: avatarName) ?? UIImage(named: "noavatar")
+                    self.avatar?.image = image
                 } else {
                     self.avatar? = UIImageView()
                 }

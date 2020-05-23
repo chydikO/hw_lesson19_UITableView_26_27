@@ -39,6 +39,11 @@ class ProfileController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .red
+        self.title = "User Profile"
+    }
     
     //MARK: - init
     init(profile: ProFile) {
