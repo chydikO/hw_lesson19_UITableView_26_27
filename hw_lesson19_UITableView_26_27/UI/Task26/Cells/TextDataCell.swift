@@ -10,6 +10,22 @@ import UIKit
 
 class TextDataCell: TableCell {
 
-   
+    @IBOutlet private var contentLabel: UILabel?
+    @IBOutlet var separated: UIView?
     
+    var data: TextData? {
+        didSet {
+            if let text = data?.text {
+                self.contentLabel?.text = text
+            } else {
+                self.contentLabel?.text = nil
+            }
+        }
+    }
+}
+
+extension TextDataCell: SeparatedProtocol {
+    var separatedView: UIView? {
+        return separated
+    }
 }
