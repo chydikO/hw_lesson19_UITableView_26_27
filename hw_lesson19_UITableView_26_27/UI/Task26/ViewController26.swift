@@ -43,11 +43,27 @@ class ViewController26: TableViewController {
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        var cellIdentier = ""
+
+        switch indexPath.section {
+        case 1:
+            cellIdentier = PictureCell.reuseIdentifier
+        case 2:
+            cellIdentier = TextDataCell.reuseIdentifier
+        default:
+            cellIdentier = ProfileCell.reuseIdentifier
+        }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.reuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentier, for: indexPath)
+        
         if let cell = cell  as? ProfileCell, let profile = dataSource[indexPath.row] as? ProFile {
             cell.data = profile
+        } else if let cell = cell  as? PictureCell, let picture = dataSource[indexPath.row] as? Picture {
+            cell.data = picture
+        } else if let cell = cell  as? TextDataCell, let text = dataSource[indexPath.row] as? TextData {
+            cell.data = text
         }
+        
         return cell
     }
     
@@ -57,6 +73,12 @@ class ViewController26: TableViewController {
         
         if let profile = dataSource[indexPath.row] as? ProFile {
             let controller = ProfileController(profile: profile)
+            self.navigationController?.pushViewController(controller, animated: true)
+        } else if let picture = dataSource[indexPath.row] as? Picture {
+            let controller = PictureController(picture: picture)
+            self.navigationController?.pushViewController(controller, animated: true)
+        } else if let textData = dataSource[indexPath.row] as? TextData {
+            let controller = TextDataController(textData: textData)
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
