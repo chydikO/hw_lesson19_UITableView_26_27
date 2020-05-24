@@ -16,7 +16,7 @@ class PictureController: ViewController {
     override func viewDidLoad() {
        super.viewDidLoad()
         view.backgroundColor = .white
-        self.title = "User Profile"
+        self.title = "Photo"
         setData()
     }
      private func setData() {
