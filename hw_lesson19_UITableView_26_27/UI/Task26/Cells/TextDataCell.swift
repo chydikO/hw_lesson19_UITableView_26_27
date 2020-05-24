@@ -10,15 +10,15 @@ import UIKit
 
 class TextDataCell: TableCell {
 
-    @IBOutlet private var contentLabel: UILabel?
+    @IBOutlet private var textView: UITextView?
     @IBOutlet var separated: UIView?
     
     var data: TextData? {
         didSet {
             if let text = data?.text {
-                self.contentLabel?.text = text
+                self.textView?.text = text
             } else {
-                self.contentLabel?.text = nil
+                self.textView?.text = nil
             }
         }
     }
