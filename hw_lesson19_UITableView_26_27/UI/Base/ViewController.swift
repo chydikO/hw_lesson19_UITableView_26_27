@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .groupTableViewBackground
 
+        setupNavigationButtons()
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -36,5 +37,34 @@ class ViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
+    }
+    
+    //MARK: - NavigationButtons
+    func setupNavigationButtons() {
+        // back
+        // если текущий не рутовый контролер
+        if self != self.navigationController?.viewControllers.first {
+            // create back button
+            self.navigationItem.leftBarButtonItem = self.createBackButton()
+        }
+        
+        // letf
+        if let leftButton = createBackButton() {
+            leftButton.target = self
+            leftButton.action = #selector(backButtonClicked)
+            self.navigationItem.leftBarButtonItem = leftButton
+        }
+    }
+    
+    func createBackButton() -> UIBarButtonItem? {
+        let backButton = UIBarButtonItem(image: UIImage(named: "backButton"),
+                                         style: UIBarButtonItem.Style.done,
+                                         target: self,
+                                         action: #selector(backButtonClicked))
+        return backButton
+    }
+    
+    @IBAction func backButtonClicked() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
