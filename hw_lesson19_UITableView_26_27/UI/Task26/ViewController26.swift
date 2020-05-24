@@ -28,7 +28,7 @@ class ViewController26: TableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dataSource.append(contentsOf: ProFile.testData())
+        dataSource.append(contentsOf: [ProFile.testData(), Picture.testData(), TextData.testData()])
     }
     
     override func viewWillAppear(_ animated: Bool) {

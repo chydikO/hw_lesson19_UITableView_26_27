@@ -21,9 +21,9 @@ class ProFile {
         self.note = note
     }
     
-    static func testData() -> [ProFile] {
+    static func testData() -> ProFile {
         let user = ProFile(name: "John", avatarName: "profileImg", dateOfBith: "10/20/1980", note: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.")
         
-        return [user]
+        return user
     }
 }

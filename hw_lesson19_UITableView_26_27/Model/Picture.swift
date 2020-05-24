@@ -14,4 +14,10 @@ class Picture {
     init(name: String) {
         self.name = name
     }
+    
+    static func testData() -> Picture {
+        let picture = Picture(name: "picture")
+        
+        return picture
+    }
 }
