@@ -21,7 +21,7 @@
                         <rect key="frame" x="20" y="10" width="280" height="100"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="280" id="Fih-LT-ijz"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="Fih-LT-ijz"/>
                             <constraint firstAttribute="height" constant="100" id="Uwv-0W-8vt"/>
                         </constraints>
                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -84,7 +84,7 @@ class ViewController26: TableViewController {
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         var height: CGFloat = CGFloat()
 
         switch indexPath.row {
