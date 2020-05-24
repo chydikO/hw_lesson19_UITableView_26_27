@@ -38,6 +38,9 @@ class ViewController26: TableViewController {
     
     override func registerCells() {
         self.tableView?.register(ProfileCell.nib, forCellReuseIdentifier: ProfileCell.reuseIdentifier)
+        self.tableView?.register(PictureCell.nib, forCellReuseIdentifier: PictureCell.reuseIdentifier)
+        self.tableView?.register(TextDataCell.nib, forCellReuseIdentifier: TextDataCell.reuseIdentifier)
+
     }
     
     // MARK: - UITableViewDataSource
@@ -45,7 +48,7 @@ class ViewController26: TableViewController {
         
         var cellIdentier = ""
 
-        switch indexPath.section {
+        switch indexPath.row {
         case 1:
             cellIdentier = PictureCell.reuseIdentifier
         case 2:
@@ -63,7 +66,6 @@ class ViewController26: TableViewController {
         } else if let cell = cell  as? TextDataCell, let text = dataSource[indexPath.row] as? TextData {
             cell.data = text
         }
-        
         return cell
     }
     
