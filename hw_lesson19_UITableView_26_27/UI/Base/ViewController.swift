@@ -47,13 +47,6 @@ class ViewController: UIViewController {
             // create back button
             self.navigationItem.leftBarButtonItem = self.createBackButton()
         }
-        
-        // letf
-        if let leftButton = createBackButton() {
-            leftButton.target = self
-            leftButton.action = #selector(backButtonClicked)
-            self.navigationItem.leftBarButtonItem = leftButton
-        }
     }
     
     func createBackButton() -> UIBarButtonItem? {
