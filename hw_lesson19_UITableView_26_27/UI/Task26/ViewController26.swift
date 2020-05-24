@@ -42,6 +42,8 @@ class ViewController26: TableViewController {
     
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.reuseIdentifier, for: indexPath)
         if let cell = cell  as? ProfileCell, let profile = dataSource[indexPath.row] as? ProFile {
             cell.data = profile
