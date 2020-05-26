@@ -29,7 +29,6 @@
 		68B813112479182A00504A75 /* ViewController26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B813102479182A00504A75 /* ViewController26.swift */; };
 		68B813152479183A00504A75 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B813122479183900504A75 /* ProfileCell.xib */; };
 		68B813162479183A00504A75 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B813132479183A00504A75 /* ProfileCell.swift */; };
-		68B813192479184700504A75 /* ViewController27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B813182479184700504A75 /* ViewController27.swift */; };
 		68B8131C24791B7800504A75 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8131A24791B7800504A75 /* PictureCell.swift */; };
 		68B8131D24791B7800504A75 /* PictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B8131B24791B7800504A75 /* PictureCell.xib */; };
 		68B8132024791B9600504A75 /* TextDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8131E24791B9600504A75 /* TextDataCell.swift */; };
@@ -61,7 +60,6 @@
 		68B813102479182A00504A75 /* ViewController26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController26.swift; sourceTree = "<group>"; };
 		68B813122479183900504A75 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		68B813132479183A00504A75 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		68B813182479184700504A75 /* ViewController27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController27.swift; sourceTree = "<group>"; };
 		68B8131A24791B7800504A75 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		68B8131B24791B7800504A75 /* PictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCell.xib; sourceTree = "<group>"; };
 		68B8131E24791B9600504A75 /* TextDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDataCell.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				68B8130C247917C200504A75 /* Task26 */,
-				68B8130D247917CA00504A75 /* Task27 */,
 				68B812F52479147000504A75 /* Base */,
 			);
 			path = UI;
@@ -179,22 +176,6 @@
 				68B8130F247917D800504A75 /* Cells */,
 			);
 			path = Task26;
-			sourceTree = "<group>";
-		};
-		68B8130D247917CA00504A75 /* Task27 */ = {
-			isa = PBXGroup;
-			children = (
-				68B813182479184700504A75 /* ViewController27.swift */,
-				68B8130E247917D200504A75 /* Cells */,
-			);
-			path = Task27;
-			sourceTree = "<group>";
-		};
-		68B8130E247917D200504A75 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		68B8130F247917D800504A75 /* Cells */ = {
@@ -293,7 +274,6 @@
 				6843EB64247A66CA005C8FC6 /* PictureController.swift in Sources */,
 				68B8132024791B9600504A75 /* TextDataCell.swift in Sources */,
 				68B8130A247917AB00504A75 /* TextData.swift in Sources */,
-				68B813192479184700504A75 /* ViewController27.swift in Sources */,
 				68B812FC247914EF00504A75 /* NavigationController.swift in Sources */,
 				68B813042479161300504A75 /* NSObject.swift in Sources */,
 				68B813112479182A00504A75 /* ViewController26.swift in Sources */,

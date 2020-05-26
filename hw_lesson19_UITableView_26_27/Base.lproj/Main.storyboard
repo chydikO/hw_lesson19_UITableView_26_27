@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qwA-aV-D4W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2aZ-qw-FBb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -24,47 +24,11 @@
             </objects>
             <point key="canvasLocation" x="4688.4057971014499" y="112.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7h1-eE-b0b">
-            <objects>
-                <viewController id="xkZ-tO-F0C" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zb2-ty-yKW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ouj-Dv-FuC"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="xFK-zg-Rxu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qb-Z4-DVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4688.4057971014499" y="924.77678571428567"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="taG-0u-txo">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qwA-aV-D4W" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="w6w-WV-pZg"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GkL-ko-fyg">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="2aZ-qw-FBb" kind="relationship" relationship="viewControllers" id="rvk-5C-mIj"/>
-                        <segue destination="qhk-te-pSJ" kind="relationship" relationship="viewControllers" id="8ZN-UC-C4C"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="djS-hy-h63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2722" y="430"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vnj-wY-Hhv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2aZ-qw-FBb" customClass="NavigationController" customModule="hw_lesson19_UITableView_26_27" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-26-100" id="WOI-Vj-Pcb"/>
+                    <tabBarItem key="tabBarItem" title="" id="WOI-Vj-Pcb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2uO-6u-f0v">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -79,28 +43,5 @@
             </objects>
             <point key="canvasLocation" x="3778.2608695652175" y="112.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="q31-8v-Bxk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qhk-te-pSJ" customClass="NavigationController" customModule="hw_lesson19_UITableView_26_27" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-27-100" id="rPY-IK-5dj"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ygm-EK-WD6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="xkZ-tO-F0C" kind="relationship" relationship="rootViewController" id="nEb-F0-3Tj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IM8-Ib-uB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3778.2608695652175" y="924.77678571428567"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="icons8-26-100" width="50" height="50"/>
-        <image name="icons8-27-100" width="50" height="50"/>
-    </resources>
 </document>
